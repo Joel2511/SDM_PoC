@@ -6,9 +6,10 @@ This repository contains the Semantic Data Management (SDM) component of the BDM
 The implementation is built using PySpark and GraphFrames in Azure Databricks, processing a sampled dataset of 100,000 records from a 28M-record transaction dataset.
 Repository Structure
 
-    SDM_PoC.ipynb: The main Databricks notebook containing the PoC code, including Markdown explanations and embedded results.
-    mount_storage.py: A script to mount the Azure Blob Storage container in Databricks.
-    README.md
+    1.SDM_PoC.ipynb: The main Databricks notebook containing the PoC code, including Markdown explanations and embedded results.
+    2.mount_storage.py: A script to mount the Azure Blob Storage container in Databricks.
+    3.README.md
+    4.PoC documentation
 
 Setup Instructions
 
@@ -17,9 +18,9 @@ Environment
 
     Platform: Azure Databricks (Standard_D3_v2 cluster, 4 vCPUs, 14 GB RAM).
     Dependencies:
-        PySpark (included in Databricks).
-        GraphFrames: Add to the Databricks cluster via Maven (graphframes:graphframes:0.8.2-spark3.2-s_2.12).
-        Python libraries: time (standard library).
+        1.PySpark (included in Databricks).
+        2.GraphFrames: Add to the Databricks cluster via Maven (graphframes:graphframes:0.8.2-spark3.2-s_2.12).
+        3.Python libraries: time (standard library).
 
 Mounting Storage
 
@@ -46,7 +47,7 @@ The code is not executable outside Databricks due to its dependency on GraphFram
 
 Results
 
-The results of the PoC are embedded in FashionFlow_SDM.ipynb under Step 5 (Verifying Results). The output includes:
+The results of the PoC are embedded in SDM_PoC.ipynb under Step 5 (Verifying Results). The output includes:
 
     Top 10 trending articles by PageRank score (e.g., article 706016001, score 72.90, "Jade HW Skinny Denim", "Black Dark").
     Top 10 customer segments by community ID (e.g., customer in community 7.0). These insights support FashionFlow’s inventory optimization and demand forecasting goals.
