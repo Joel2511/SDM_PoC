@@ -6,7 +6,6 @@ This repository contains the Semantic Data Management (SDM) component of the BDM
 ## Repository Structure
 - `SDM_POC.ipynb`: Main notebook with PoC code, explanations, and embedded results.
 - `TrendSyncMountAzureStorage.ipynb`: Script to mount Azure Blob Storage in Databricks.
-- `README.md`: This file.
 - `SDM_POC.pdf`: PoC documentation.
 
 ## Setup Instructions
