@@ -9,7 +9,7 @@ Repository Structure
     1.SDM_POC.ipynb: The main Databricks notebook containing the PoC code, including Markdown explanations and embedded results.
     2.TrendSyncMountAzureStorage.ipynb: A script to mount the Azure Blob Storage container in Databricks.
     3.README.md
-    4.PoC documentation
+    4.PoC documentation (SDM_POC.pdf)
 
 Setup Instructions
 
@@ -28,7 +28,6 @@ The code accesses data from an Azure Blob Storage container (gold-zone-bdm). To 
 
     Ensure access to an Azure Blob Storage account with the enriched_transactions Delta table.
     Run the TrendSyncMountAzureStorage.ipynb script in Databricks:
-
 
 
 Running the Code
