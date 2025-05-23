@@ -1,4 +1,4 @@
-# TrendSync SDM Join Project
+# TrendSync SDM Joint Project
 
 ## Overview
 This repository contains the Semantic Data Management (SDM) component of the BDMA Joint Project for TrendSync, a simulated fashion retail start-up focused on inventory optimization and demand forecasting. The Proof of Concept (PoC) uses property graphs to model customer-article purchase relationships, leveraging graph analytics to identify trending articles and customer segments. It processes a sampled dataset of 100,000 records from a 28M-record transaction dataset using PySpark and GraphFrames in Azure Databricks.
