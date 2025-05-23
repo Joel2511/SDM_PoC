@@ -16,7 +16,13 @@ Setup Instructions
 This PoC was developed in Azure Databricks. While the code is not directly executable outside Databricks, the notebook includes all steps, explanations, and results for review.
 Environment
 
-    Platform: Azure Databricks (Standard_D3_v2 cluster, 4 vCPUs, 14 GB RAM).
+Platform: Azure Databricks (Standard_D3_v2 cluster, 4 vCPUs, 14 GB RAM).
+## Prerequisites
+To run this project successfully, ensure the following:
+- **Databricks Runtime Version**: Use **Databricks Runtime 14.3 LTS** (Long Term Support) to avoid compatibility issues with dependencies such as GraphFrames (`graphframes:graphframes:0.8.2-spark3.2-s_2.12`) and other libraries used in the notebooks.
+- **Azure Blob Storage**: Configure access with appropriate SAS tokens as specified in the notebooks.
+- **Dependencies**: Install the following library on your Databricks cluster:
+- **GraphFrames**: Add via Maven with coordinates `graphframes:graphframes:0.8.2-spark3.2-s_2.12` (see installation instructions below).
     Dependencies:
         1.PySpark (included in Databricks).
         2.GraphFrames: Add to the Databricks cluster via Maven (graphframes:graphframes:0.8.2-spark3.2-s_2.12).
