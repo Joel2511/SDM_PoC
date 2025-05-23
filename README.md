@@ -6,8 +6,8 @@ This repository contains the Semantic Data Management (SDM) component of the BDM
 The implementation is built using PySpark and GraphFrames in Azure Databricks, processing a sampled dataset of 100,000 records from a 28M-record transaction dataset.
 Repository Structure
 
-    1.SDM_PoC.ipynb: The main Databricks notebook containing the PoC code, including Markdown explanations and embedded results.
-    2.mount_storage.py: A script to mount the Azure Blob Storage container in Databricks.
+    1.SDM_POC.ipynb: The main Databricks notebook containing the PoC code, including Markdown explanations and embedded results.
+    2.TrendSyncMountAzureStorage.ipynb: A script to mount the Azure Blob Storage container in Databricks.
     3.README.md
     4.PoC documentation
 
@@ -27,16 +27,16 @@ Mounting Storage
 The code accesses data from an Azure Blob Storage container (gold-zone-bdm). To replicate the setup:
 
     Ensure access to an Azure Blob Storage account with the enriched_transactions Delta table.
-    Run the mount_storage.py script in Databricks:
+    Run the TrendSyncMountAzureStorage.ipynb script in Databricks:
 
-Replace <your-storage-account-name> with your Azure storage account name.
+
 
 Running the Code
 
 The code is not executable outside Databricks due to its dependency on GraphFrames and Spark. However, the results are embedded in the notebook for review.
 
     Open the Notebook:
-        Import SDM_PoC.ipynb into a Databricks workspace.
+        Import SDM_POC.ipynb into a Databricks workspace.
     Install Dependencies:
         Ensure GraphFrames is installed on the cluster (see Dependencies above).
     Mount Storage:
@@ -47,7 +47,7 @@ The code is not executable outside Databricks due to its dependency on GraphFram
 
 Results
 
-The results of the PoC are embedded in SDM_PoC.ipynb under Step 5 (Verifying Results). The output includes:
+The results of the PoC are embedded in SDM_POC.ipynb under Step 5 (Verifying Results). The output includes:
 
     Top 10 trending articles by PageRank score (e.g., article 706016001, score 72.90, "Jade HW Skinny Denim", "Black Dark").
     Top 10 customer segments by community ID (e.g., customer in community 7.0). These insights support FashionFlow’s inventory optimization and demand forecasting goals.
