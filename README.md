@@ -24,9 +24,9 @@ To run this project successfully, ensure the following:
 - **Dependencies**: Install the following library on your Databricks cluster:
 - **GraphFrames**: Add via Maven with coordinates `graphframes:graphframes:0.8.2-spark3.2-s_2.12` (see installation instructions below).
     Dependencies:
-        1.PySpark (included in Databricks).
-        2.GraphFrames: Add to the Databricks cluster via Maven (graphframes:graphframes:0.8.2-spark3.2-s_2.12).
-        3.Python libraries: time (standard library).
+  1.PySpark (included in Databricks).
+  2.GraphFrames: Add to the Databricks cluster via Maven (graphframes:graphframes:0.8.2-spark3.2-s_2.12).
+  3.Python libraries: time (standard library).
 
 Mounting Storage
 
